@@ -106,7 +106,7 @@ pipeline {
                     clusterName: 'kubernetes',
                     contextName: '',
                     credentialsId: 'k8-cred',
-                    namespace: 'webappss',
+                    namespace: 'webapps',
                     restrictKubeConfigAccess: false,
                     serverUrl: 'https://172.31.88.199:6443'
                 ) {
