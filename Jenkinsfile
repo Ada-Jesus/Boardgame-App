@@ -75,7 +75,7 @@ pipeline {
         stage('Build & Tag Docker Image') {
             steps {
                 script {
-                    withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
+                    withDockerRegistry(credentialsId: 'docker-cred') {
                         sh 'mvn clean package'
                         sh 'docker build -t adajesus/boardgame:latest .'
                     }
