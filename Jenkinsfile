@@ -98,7 +98,7 @@ pipeline {
                 }
             }
         }
-
+        
         stage('Deploy To Kubernetes') {
             steps {
                 withKubeConfig(
@@ -155,7 +155,7 @@ pipeline {
             cleanWs()
         }
         success {
-            echo "Pipeline succeeded! 🎉"
+            echo "Pipeline succeeded! 🎉🎉"
         }
         failure {
             echo "Pipeline failed. ❌"
